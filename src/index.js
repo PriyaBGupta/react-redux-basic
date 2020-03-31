@@ -12,6 +12,8 @@ const rootReducer = combineReducers({
     ctr:counterReducer,
     res:resultReducer
 });
+//const store = createStore(reducer);
+//the below store is created using two splitted reduce file
 const store = createStore(rootReducer);
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));

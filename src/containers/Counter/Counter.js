@@ -53,6 +53,13 @@ const mapStateToProps = state =>{
         storedResults:state.res.results
     }
 }
+// if you are using only reducer and not combination of it then use following code
+// const mapStateToProps = state =>{
+//     return{
+//         ctr:state.counter,
+//         storedResults:state.results
+//     }
+// }
 const mapDispatchToProps = dispatch =>{
     return{
         onIncrementCounter:()=>dispatch({type:actionTypes.INCREMENT}),
