@@ -8,6 +8,7 @@ export const saveResult = (result) => {
 }
 export const storeResult = (result) => {
     return dispatch => {
+        // here you can use promise and get the data and once the data is thre then use dispatch to update the store
         setTimeout(()=>{
             dispatch(saveResult(result));
         },2000);

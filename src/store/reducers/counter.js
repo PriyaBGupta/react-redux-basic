@@ -29,3 +29,4 @@ const reducer = (state = initialState,action) =>{
     return state;
 }
 export default reducer;
+//we should add data transforming logic into reducer and not in action creator
